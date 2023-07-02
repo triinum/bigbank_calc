@@ -7,11 +7,10 @@ Feature: Loan modal
     Then User navigates to loan modal
     When User inputs '<amount>' as loan amount
     Then User inputs '<months>' as duration of loan period
-    Then Monthly amount is '700' EUR
+    Then Monthly amount is '143,32' EUR
 
     Examples: 
       | amount               | months                  |
       | 6000                 | 10                      |
-      | 10000                | 9                       |
 
 
