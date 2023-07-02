@@ -13,7 +13,7 @@ class calculate_loan {
         // cy.get('.header-calculator-amount').find('input').first().type('8000-1612023', {
         //     force: true,
         //   });
-        cy.get('.bb-labeled-value__value').should('include.text','119,93')   
+        //cy.get('.bb-labeled-value__value').should('include.text','119,93')   
     }
 
     fillAmountField() {
@@ -22,6 +22,10 @@ class calculate_loan {
 
     fillMonthField(){
         return cy.get(`input[name=header-calculator-period`)
+    }
+
+    monthly_amount_calcuated(){
+        return cy.get('.bb-labeled-value__value')
     }
 
     clickSubmitButton(){
