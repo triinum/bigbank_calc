@@ -8,7 +8,6 @@ Feature: Loan modal
     When User inputs '<amount>' as loan amount
     Then User inputs '<months>' as duration of loan period
     And User presses Jätka button
-    Then User sees invalid credentials message
 
     Examples: 
       | amount               | months                  |

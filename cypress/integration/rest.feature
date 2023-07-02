@@ -1,5 +1,5 @@
-Feature:  Api Testing for GitHub As a Project
+Feature:  Loan API basic tests
 
-    Scenario: Create a repository for the authenticated user
-        Given Make a post request with the resource '/user/repos'
+    Scenario: make requests and verify response body
+        Given GET request is 200 and response body is correct
         When Print the response in console

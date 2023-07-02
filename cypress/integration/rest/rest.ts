@@ -2,7 +2,7 @@ import {Given,When,And,Then} from "cypress-cucumber-preprocessor/steps";
 var baseUrl = `https://laenutaotlus.bigbank.ee/?amount=5000&interestRate=13.8&period=60&productName=SMALL_LOAN&loanPurpose=DAILY_SETTLEMENTS&bbmedium=small_loan`;
 
 
-Given("Make a post request with the resource '{word}'",(Resource)=>{
+Given("GET request is 200 and response body is correct",(Resource)=>{
     cy.request({
         method:"GET",
         url:baseUrl,

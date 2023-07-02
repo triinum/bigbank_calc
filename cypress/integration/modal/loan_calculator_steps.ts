@@ -9,11 +9,12 @@ import calculate_loan from '../../support/pageObjects/calculate_loan';
 
 describe('The entire small loan user flow', () => {
     Given('User has opened Bigbank main page', () => {
-        Navigate_to_modal.visitPage();
+        Navigate_to_modal.visitPage()
     });
 
     Then('User navigates to loan modal', () => {
-        Navigate_to_modal.open_modal();
+        Navigate_to_modal.open_modal()
+        calculate_loan.verify_calculation_elements()
     })
 
     When('User inputs {string} as loan amount', (amount: string) => {
@@ -25,10 +26,6 @@ describe('The entire small loan user flow', () => {
     });
 
     When('User presses Jätka button', () => {
-        calculate_loan.clickSubmitButton();
-    })
-
-    Then('User sees invalid credentials message', () => {
-        calculate_loan.checkErrorMessage('Invalid username and/or password.');
+        calculate_loan.clickSubmitButton()
     })
 })
