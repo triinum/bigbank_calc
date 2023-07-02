@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://bigbank.ee",
+    "testFiles": "**/*.feature",
+    "screenshotOnRunFailure": false,
+    "video": false
+}
